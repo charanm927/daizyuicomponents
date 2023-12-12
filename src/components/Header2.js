@@ -26,22 +26,52 @@ const Header2 = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a>Item 1</a>
+              <details>
+                <summary>Components</summary>
+                <ul className="p-2">
+                  <li>
+                    <a>Submenu 1</a>
+                  </li>
+                  <li>
+                    <a>Submenu 2</a>
+                  </li>
+                </ul>
+              </details>
             </li>
             <li>
-              <a>Parent</a>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
+              <a>Premium</a>
             </li>
             <li>
-              <a>Item 3</a>
+              <a>CheatSheet</a>
             </li>
+            <li>
+              <a>Gradient Generator</a>
+            </li>
+            <li>
+              <details>
+                <summary>EcoSystem</summary>
+                <ul className="p-2">
+                  <li>
+                    <a>Submenu 1</a>
+                  </li>
+                  <li>
+                    <a>Submenu 2</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <a>
+                Discover
+                <span className="badge badge-xs badge-accent indicator-item"></span>
+              </a>
+            </li>
+            <a className="btn mr-2">
+              Blog
+              <span className="badge badge-xs badge-accent indicator-item"></span>
+            </a>
+            <a className="btn btn-accent mr-2">Submit</a>
+            <a className="btn btn-outline mr-2">Login</a>
           </ul>
         </div>
         <a className="btn btn-ghost text-xl">tailwindcomponents</a>
@@ -91,7 +121,7 @@ const Header2 = () => {
           </li>
         </ul>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end hidden lg:flex">
         <a className="btn mr-2">
           Blog
           <span className="badge badge-xs badge-accent indicator-item"></span>
